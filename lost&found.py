@@ -11,7 +11,9 @@ cursor = db0.cursor()
 root= Tk()
 root.configure(bg='black')
 #root.resizable(height=1000, width= 500)
-root.geometry('600x255')
+root.geometry('300x120')
+mainpage = Label(root, text = '''Welcome to Lost and Found''', bg="black", fg="white")
+mainpage.pack()
 def login():
 
     top3=Toplevel()
@@ -159,9 +161,9 @@ def signup():
 
 
 mainbutton = Button(root, text="Login", command=login, bg="#90b4fc", fg="black")
-mainbutton.place(x=260, y=120)
+mainbutton.place(x=120, y=50)
 
 
 mainbutton1 = Button(root, text="SignUp", command=signup, bg="#90b4fc", fg="black")
-mainbutton1.place(x=260, y=160)
+mainbutton1.place(x=116, y=80)
 root.mainloop()
